@@ -5,4 +5,6 @@
     <string name="second_team_name">Canada</string>
     <string name="first_team_score">1</string>
     <string name="second_team_score">2</string>
+    <string name="increase_btn">Increase</string>
+    <string name="decrease_btn">Decrease</string>
 </resources>
