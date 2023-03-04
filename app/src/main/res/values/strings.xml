@@ -1,10 +1,20 @@
 <resources>
+
+<!--    Name of App-->
     <string name="app_name">BikashChhantyal_Score</string>
+
+<!--    Title of app-->
     <string name="title_text">Basketball Game Score Board</string>
+
+<!--    Names of Team-->
     <string name="first_team_name">Team A</string>
     <string name="second_team_name">Team B</string>
+
+<!--    Scores of both team-->
     <string name="first_team_score">0</string>
     <string name="second_team_score">0</string>
+
+<!--    Button title-->
     <string name="increase_btn">Increase</string>
     <string name="decrease_btn">Decrease</string>
 </resources>
