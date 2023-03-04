@@ -15,5 +15,8 @@ The Basketball Scorekeeper app is a simple Android application that allows users
 ### Usage
 To use the app, simply download the source code and open it in Android Studio. Then, run the app on an Android emulator or on a physical device.
 
+### Screenshot
+![Image](https://github.com/bikashchhantyal95/Lab4-AndroidStudio/blob/main/Screenshot%202023-03-03%20at%2010.16.42%20PM.png)
+
 ### License
 The Basketball Scorekeeper app is licensed under the [MIT License](https://opensource.org/license/mit/). You are free to use, modify, and distribute the app as you see fit.
