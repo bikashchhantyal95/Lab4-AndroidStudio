@@ -21,11 +21,21 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        // Add a listener to the switch button for team selection
         binding.switchTeams.setOnCheckedChangeListener{ _, isChecked ->
             val message: String = if(isChecked) "You have selected Team B" else "You have selected Team A"
+
+            // Update is_scoring_team_A based on the current state of the switch button
             is_scoring_team_A = !isChecked
+
+            // Clear the selected radio button
             binding.points.clearCheck()
-            printToastMessage(message)
+
+            // display message to show the selected team
+            displayMessage(message)
+
+            // Update UI based on the currently scoring team
             if (is_scoring_team_A) {
                 binding.teamATitle.setTextColor(Color.RED)
                 binding.teamBTitle.setTextColor(Color.BLACK)
@@ -38,6 +48,8 @@ class MainActivity : AppCompatActivity() {
                 binding.teamBScore.setTextColor(Color.RED)
             }
         }
+
+        // Update UI based on the initially selected team
         if(is_scoring_team_A){
             binding.teamATitle.setTextColor(Color.RED)
             binding.teamAScore.setTextColor(Color.RED)
@@ -45,9 +57,8 @@ class MainActivity : AppCompatActivity() {
             binding.teamBTitle.setTextColor(Color.RED)
             binding.teamBScore.setTextColor(Color.RED)
         }
-//       By default team A is selected
-//        if switch button is clicked it will switch team from team A to B o
-//        if team B is selected it will switch to team B
+
+        // Add a listener to the increase button for score increment
         binding.increaseButton.setOnClickListener{
             if (is_scoring_team_A){
                 binding.teamAScore.text = (Integer.parseInt(binding.teamAScore.text as String) + 1).toString()
@@ -55,45 +66,55 @@ class MainActivity : AppCompatActivity() {
                 binding.teamBScore.text = (Integer.parseInt(binding.teamBScore.text as String) + 1).toString()
             }
         }
+
+        // Add a listener to the decrease button for score decrement
         binding.decreaseButton.setOnClickListener{
             if (is_scoring_team_A){
                 binding.teamAScore.text = (Integer.parseInt(binding.teamAScore.text as String) - 1).toString()
                 if(Integer.parseInt(binding.teamAScore.text as String) < 0){
-                    printToastMessage("Score cannot be negative.")
+                    binding.teamAScore.text = "0"
+                    displayMessage("Score cannot be negative.")
                 }
             }else{
                 binding.teamBScore.text = (Integer.parseInt(binding.teamBScore.text as String) - 1).toString()
                 if(Integer.parseInt(binding.teamBScore.text as String) < 0){
-                    printToastMessage("Score cannot be negative.")
+//                    set score to zero if score of team B is less than 0
+                    binding.teamBScore.text = "0"
+                    displayMessage("Score cannot be negative.")
                 }
             }
         }
+
+        // Add a listener to the radio group button for score selection
         binding.points.setOnCheckedChangeListener{
             _, checkedId ->
             val selectedRadioButton = findViewById<RadioButton>(checkedId)
 
-
+//            value is stored on [score] variable based on selected radio button
             val score = when(selectedRadioButton?.text.toString()){
                 "1" -> 1
                 "2" -> 2
                 "3" -> 3
                 else -> 0
             }
+
+//            value is stored on [teamName] variable based on selected team
             val teamName: String = if(is_scoring_team_A) "Team A" else "Team B"
+
+//            increase score base on selected value from radio btn for selected team
             if(is_scoring_team_A){
                 binding.teamAScore.text = (Integer.parseInt(binding.teamAScore.text as String) + score).toString()
             }else{
                 binding.teamBScore.text = (Integer.parseInt(binding.teamBScore.text as String) + score).toString()
             }
-            printToastMessage("$teamName Scored $score points")
+            displayMessage("$teamName Scored $score points")
         }
 
     }
-    // Function to print Toast Message
-    private fun printToastMessage(message: String) {
-        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
-    }
-    private fun IncrementByValue(value: Int, ){
 
+
+    // Function to print display Message
+    private fun displayMessage(message: String) {
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
 }

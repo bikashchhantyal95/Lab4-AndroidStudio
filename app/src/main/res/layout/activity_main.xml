@@ -7,7 +7,7 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <!--    Team First Layout-->
+    <!--    Title-->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="53dp"
@@ -15,7 +15,7 @@
         android:text="@string/title_text"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="40dp"
+        android:textSize="30dp"
         android:textStyle="bold" />
 
     <LinearLayout
@@ -30,6 +30,8 @@
             android:orientation="horizontal"
             android:background="@drawable/border_radius">
 
+
+<!--            Layout of Team A-->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -55,6 +57,8 @@
                     android:textSize="70dp" />
             </LinearLayout>
 
+
+<!--            Switch button to toggle teams-->
             <Switch
                 android:id="@+id/switch_teams"
                 android:layout_width="wrap_content"
@@ -63,6 +67,8 @@
                 android:text=""
                 />
 
+
+<!--            Layout for Team B-->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -92,7 +98,7 @@
     </LinearLayout>
 
 
-
+<!-- Button Layout for Increase and Decrease Button-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -116,6 +122,9 @@
             android:textAllCaps="false"
             android:text="@string/decrease_btn" />
     </LinearLayout>
+
+
+<!--    Layout for Radio Buttons-->
     <LinearLayout
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
