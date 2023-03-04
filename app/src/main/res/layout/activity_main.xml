@@ -3,8 +3,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    >
+    tools:context=".MainActivity">
 
     <!--    Team First Layout-->
     <TextView
@@ -49,7 +50,7 @@
                     android:text="@string/first_team_score"
                     android:textAlignment="center"
                     android:textColor="@color/teal_700"
-                    android:id="@+id/team_nepal"
+                    android:id="@+id/team_A_score"
                     android:textSize="70dp" />
             </LinearLayout>
 
@@ -58,7 +59,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="" />
+                android:text=""
+                />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -76,7 +78,7 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/team_canada"
+                    android:id="@+id/team_B_score"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="@string/second_team_score"
@@ -94,7 +96,7 @@
         android:layout_height="wrap_content"
         android:padding="15dp">
         <Button
-            android:id="@+id/increase"
+            android:id="@+id/increase_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -105,7 +107,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"/>
         <Button
-            android:id="@+id/decrease"
+            android:id="@+id/decrease_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -116,7 +118,8 @@
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:id="@+id/points">
 
         <RadioButton
             android:id="@+id/one_point"
