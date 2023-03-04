@@ -59,6 +59,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         // Add a listener to the increase button for score increment
+//        Increase score by one for the selected team
         binding.increaseButton.setOnClickListener{
             if (is_scoring_team_A){
                 binding.teamAScore.text = (Integer.parseInt(binding.teamAScore.text as String) + 1).toString()
