@@ -1,5 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
-
 <!--Layout start-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -32,7 +30,7 @@
             android:background="@drawable/border_radius">
 
 
-<!--            Layout of Team A-->
+            <!--            Layout of Team A-->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -44,8 +42,7 @@
                     android:padding="10dp"
                     android:text="@string/first_team_name"
                     android:textAlignment="center"
-                    android:textColor="@color/teal_700"
-                    android:textSize="20dp"
+                    style="@style/textStyleForTeamTitle"
                     android:id="@+id/team_A_title"/>
 
                 <TextView
@@ -53,13 +50,12 @@
                     android:layout_height="match_parent"
                     android:text="@string/first_team_score"
                     android:textAlignment="center"
-                    android:textColor="@color/teal_700"
                     android:id="@+id/team_A_score"
-                    android:textSize="70dp" />
+                    style="@style/textStyleForScore"/>
             </LinearLayout>
 
 
-<!--            Switch button to toggle teams-->
+            <!--            Switch button to toggle teams-->
             <Switch
                 android:id="@+id/switch_teams"
                 android:layout_width="wrap_content"
@@ -69,7 +65,7 @@
                 />
 
 
-<!--            Layout for Team B-->
+            <!--            Layout for Team B-->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -82,8 +78,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/second_team_name"
                     android:textAlignment="center"
-                    android:textColor="@color/teal_700"
-                    android:textSize="20dp"
+                    style="@style/textStyleForTeamTitle"
                     />
 
                 <TextView
@@ -92,14 +87,13 @@
                     android:layout_height="match_parent"
                     android:text="@string/second_team_score"
                     android:textAlignment="center"
-                    android:textColor="@color/teal_700"
-                    android:textSize="70dp" />
+                    style="@style/textStyleForScore" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 
 
-<!-- Button Layout for Increase and Decrease Button-->
+    <!-- Button Layout for Increase and Decrease Button-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -125,21 +119,21 @@
     </LinearLayout>
 
 
-<!--    Layout for Radio Buttons-->
+    <!--    Layout for Radio Buttons-->
     <LinearLayout
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:orientation="vertical"
         android:padding="15dp">
 
-<!--        Title-->
+        <!--        Title-->
         <TextView
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:text="Points"
             android:textSize="20dp"/>
 
-<!--        Radio Buttons for basket ball points   -->
+        <!--        Radio Buttons for basket ball points   -->
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
