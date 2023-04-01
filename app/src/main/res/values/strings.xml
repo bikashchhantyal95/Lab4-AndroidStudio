@@ -17,4 +17,6 @@
 <!--    Button title-->
     <string name="increase_btn">Increase</string>
     <string name="decrease_btn">Decrease</string>
+    <string name="three_points">+ 3</string>
+    <string name="two_points">+ 2</string>
 </resources>

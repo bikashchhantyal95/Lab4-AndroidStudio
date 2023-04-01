@@ -16,7 +16,7 @@
     <style name="Button" parent="Widget.AppCompat.Button">
         <item name="android:textSize">20sp</item>
         <item name="android:textColor">#FFFFFF</item>
-        <item name="background">@drawable/border_radius</item>
+        <item name="background">@drawable/button_border</item>
     </style>
 
 </resources>

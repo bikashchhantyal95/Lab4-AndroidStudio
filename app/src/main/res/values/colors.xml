@@ -10,7 +10,7 @@
 <!--    color for score-->
     <color name="dark_300">#03001C</color>
 <!--    color for view containing team tile and score-->
-    <color name="background_color">#736E6E</color>
+    <color name="background_color">#C2B6B6</color>
 
 <!--    stroke color for border of the view-->
     <color name="border_color">#00000000</color>
