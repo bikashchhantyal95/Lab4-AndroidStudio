@@ -26,14 +26,11 @@
         <item name="android:textSize">100dp</item>
     </style>
 
-<!--    style for buttons-->
-    <style name="addButton" parent="Widget.AppCompat.Button">
+<!--    style for button-->
+    <style name="Button" parent="Widget.AppCompat.Button">
         <item name="android:textSize">20sp</item>
         <item name="android:textColor">#FFFFFF</item>
+        <item name="background">@drawable/border_radius</item>
     </style>
 
-    <style name="decreaseButton" parent="Widget.AppCompat.Button">
-        <item name="android:textSize">20sp</item>
-        <item name="android:textColor">#FFFFFF</item>
-    </style>
 </resources>

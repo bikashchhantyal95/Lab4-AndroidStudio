@@ -7,17 +7,28 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <!--   App Title-->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="53dp"
-        android:gravity="center"
-        android:text="@string/title_text"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        android:textStyle="bold" />
-    <!--            Switch button to toggle teams-->
+
+        <!--   App Title-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:fontFamily=""
+            android:gravity="center"
+            android:text="@string/title_text"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+        <Switch
+            android:id="@+id/toggleMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Night Mode"
+            android:layout_marginLeft="15dp"
+            />
+
 
 
     <LinearLayout
@@ -107,8 +118,7 @@
             android:layout_weight="1"
             android:textAllCaps="false"
             android:text="@string/increase_btn"
-            style="@style/addButton"
-            android:background="@drawable/border_radius"/>
+            style="@style/Button"/>
         <View
             android:layout_weight="1"
             android:layout_width="0dp"
@@ -120,8 +130,7 @@
             android:layout_weight="1"
             android:textAllCaps="false"
             android:text="@string/decrease_btn"
-            style="@style/decreaseButton"
-            android:background="@drawable/border_radius"/>
+            style="@style/Button"/>
     </LinearLayout>
 
 

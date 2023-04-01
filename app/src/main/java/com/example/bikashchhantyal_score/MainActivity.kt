@@ -7,6 +7,7 @@ import android.widget.RadioButton
 import android.widget.RadioGroup
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import com.example.bikashchhantyal_score.databinding.ActivityMainBinding
 
 
@@ -14,13 +15,18 @@ class MainActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityMainBinding
 
+
     // is_scoring_team_A is used to keep track of which team is currently scoring
     private var is_scoring_team_A = true
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        getSupportActionBar()?.hide()
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
+
 
         // Add a listener to the switch button for team selection
         binding.switchTeams.setOnCheckedChangeListener{ _, isChecked ->
@@ -37,25 +43,25 @@ class MainActivity : AppCompatActivity() {
 
             // Update UI based on the currently scoring team
             if (is_scoring_team_A) {
-                binding.teamATitle.setTextColor(Color.RED)
+                binding.teamATitle.setTextColor(Color.GREEN)
                 binding.teamBTitle.setTextColor(Color.WHITE)
-                binding.teamAScore.setTextColor(Color.RED)
+                binding.teamAScore.setTextColor(Color.GREEN)
                 binding.teamBScore.setTextColor(Color.WHITE)
             } else {
-                binding.teamBTitle.setTextColor(Color.RED)
+                binding.teamBTitle.setTextColor(Color.GREEN)
                 binding.teamATitle.setTextColor(Color.WHITE)
                 binding.teamAScore.setTextColor(Color.WHITE)
-                binding.teamBScore.setTextColor(Color.RED)
+                binding.teamBScore.setTextColor(Color.GREEN)
             }
         }
 
         // Update UI based on the initially selected team
         if(is_scoring_team_A){
-            binding.teamATitle.setTextColor(Color.RED)
-            binding.teamAScore.setTextColor(Color.RED)
+            binding.teamATitle.setTextColor(Color.GREEN)
+            binding.teamAScore.setTextColor(Color.GREEN)
         }else{
-            binding.teamBTitle.setTextColor(Color.RED)
-            binding.teamBScore.setTextColor(Color.RED)
+            binding.teamBTitle.setTextColor(Color.GREEN)
+            binding.teamBScore.setTextColor(Color.GREEN)
         }
 
         // Add a listener to the increase button for score increment
