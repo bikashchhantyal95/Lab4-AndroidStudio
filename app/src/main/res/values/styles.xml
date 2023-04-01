@@ -1,11 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="textStyleForTeamTitle">
-        <item name="android:textColor">#FFFFFFFF</item>
-        <item name="android:textSize">25dp</item>
-    </style>
-    <style name="textStyleForScore">
-        <item name="android:textColor">#FFFFFFFF</item>
-        <item name="android:textSize">100dp</item>
-    </style>
+
 </resources>

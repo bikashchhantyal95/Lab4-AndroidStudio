@@ -1,7 +1,7 @@
 <resources>
 
 <!--    Name of App-->
-    <string name="app_name">BikashChhantyal_Score</string>
+    <string name="app_name">Bikash Chhantyal_Score</string>
 
 <!--    Title of app-->
     <string name="title_text">Basketball Game Score Board</string>

@@ -38,13 +38,13 @@ class MainActivity : AppCompatActivity() {
             // Update UI based on the currently scoring team
             if (is_scoring_team_A) {
                 binding.teamATitle.setTextColor(Color.RED)
-                binding.teamBTitle.setTextColor(Color.BLACK)
+                binding.teamBTitle.setTextColor(Color.WHITE)
                 binding.teamAScore.setTextColor(Color.RED)
-                binding.teamBScore.setTextColor(Color.BLACK)
+                binding.teamBScore.setTextColor(Color.WHITE)
             } else {
                 binding.teamBTitle.setTextColor(Color.RED)
-                binding.teamATitle.setTextColor(Color.BLACK)
-                binding.teamAScore.setTextColor(Color.BLACK)
+                binding.teamATitle.setTextColor(Color.WHITE)
+                binding.teamAScore.setTextColor(Color.WHITE)
                 binding.teamBScore.setTextColor(Color.RED)
             }
         }
