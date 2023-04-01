@@ -12,25 +12,8 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
-    </style>
 
-<!--    style for text of team names-->
-    <style name="textStyleForTeamTitle">
-        <item name="android:textColor">#FFFFFFFF</item>
-        <item name="android:textSize">25dp</item>
-    </style>
 
-<!--    text styles for team score-->
-    <style name="textStyleForScore">
-        <item name="android:textColor">#FFFFFFFF</item>
-        <item name="android:textSize">100dp</item>
-    </style>
-
-<!--    style for button-->
-    <style name="Button" parent="Widget.AppCompat.Button">
-        <item name="android:textSize">20sp</item>
-        <item name="android:textColor">#FFFFFF</item>
-        <item name="background">@drawable/border_radius</item>
     </style>
 
 </resources>

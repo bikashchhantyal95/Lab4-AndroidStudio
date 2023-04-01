@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+<!--    color for app title-->
+    <color name="dark_100">#03001C</color>
+
+
+<!--    color for score title-->
+    <color name="dark_200">#03001C</color>
+<!--    color for score-->
+    <color name="dark_300">#03001C</color>
 <!--    color for view containing team tile and score-->
     <color name="background_color">#736E6E</color>
 
 <!--    stroke color for border of the view-->
-    <color name="border_color">#FFFFFFFF</color>
+    <color name="border_color">#00000000</color>
 
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
